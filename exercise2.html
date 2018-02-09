@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pepper CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html#option1">Exercise 1</a>
+            </li>
+            <li>
+                <a href="exercise2.html">Exercise 2</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="option">
+            <a href="#option1" onclick="exercise.getTabContent('option1')">Option 1</a>
+        </div>
+        <section class="option--content" id="option1">
+        </section>
+        <div class="option">
+            <a href="#option2" onclick="exercise.getTabContent('option2')">Option 2</a>
+        </div>
+        <section class="option--content" id="option2">
+        </section>
+        <div class="option" onclick="exercise.getTabContent('option3')">
+            <a href="#option3">Option 3</a>
+        </div>
+        <section class="option--content" id="option3">
+        </section>
+    </div>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
